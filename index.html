@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CapsLock</title>
-    <script src="main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALL CAPS</title>
+  <link rel="stylesheet" href="style.css">
+ <script src="main.js"></script>
 </head>
 <body>
-    <input id="dados" type="text">
-    <h1 id="textoexibido"></h1>
+  <h1>ALL CAPS</h1>
+  <textarea id="editor" placeholder="Digite seu texto aqui..."></textarea>
+  <div class="buttons">
+    <button id="btnMaiusculo">MAIÚSCULO</button>
+    <button id="btnMinusculo">minúsculo</button>
+  </div>
+
+  <script>
+    const editor = document.getElementById("editor");
+    const btnMaiusculo = document.getElementById("btnMaiusculo");
+    const btnMinusculo = document.getElementById("btnMinusculo");
+
+    btnMaiusculo.addEventListener("click", () => {
+      editor.value = editor.value.toUpperCase();
+    });
+
+    btnMinusculo.addEventListener("click", () => {
+      editor.value = editor.value.toLowerCase();
+    });
+  </script>
 </body>
 </html>
