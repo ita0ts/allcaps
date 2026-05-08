@@ -1,3 +1,3 @@
 # capslock
 
-https://ita0ts.github.io/allcaps/
+https://wisteriaww.github.io/allcaps/
